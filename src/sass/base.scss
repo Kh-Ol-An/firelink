@@ -32,11 +32,19 @@ a {
   text-decoration: none;
 }
 
-button:hover {
-  cursor: pointer;
-}
-
 a:focus,
 button:focus {
   outline: none;
+}
+
+.container {
+  width: 98.4em;
+  margin: 0 auto;
+}
+
+@media (max-width: 983px) {
+  .container {
+    width: 100%;
+    padding: 0 0.5em;
+  }
 }

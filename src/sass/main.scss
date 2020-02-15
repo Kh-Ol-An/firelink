@@ -4,4 +4,9 @@
 
 @import "normalize.scss";
 @import "reset.scss";
+@import "fonts.scss";
 @import "base.scss";
+
+// components
+@import "components/header.scss";
+@import "components/slider.scss";
