@@ -1,0 +1,128 @@
+.topper {
+  border-top: 0.3em solid rgb(89, 183, 194);
+  background: rgb(245, 247, 249);
+  margin-bottom: 3.8em;
+}
+
+.topper::before,
+.topper::after {
+  width: 100%;
+  height: 0.3em;
+  position: absolute;
+  left: 0;
+  display: block;
+  content: "";
+}
+
+.topper::before {
+  top: 0.3em;
+  background: rgb(127, 203, 206);
+}
+
+.topper::after {
+  top: 0.6em;
+  background: rgb(170, 220, 224);
+}
+
+.topper-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 4.2em;
+  padding-top: 0.6em;
+}
+
+.topper__contacts {
+  font-size: 1.1rem; // 11px
+  padding-left: 2.1818em;
+  margin-right: 9.8181em;
+  display: flex;
+  align-items: center;
+  background: url("../images/icon/phone.png") no-repeat left center;
+  font-family: "Bitter";
+  font-style: normal;
+  color: #444;
+}
+
+.topper__contacts-icon {
+  margin-right: 0.7272em;
+}
+
+.topper__autorization {
+  font-size: 1.2rem; // 12px
+  display: flex;
+  align-items: center;
+  font-family: "Bitter";
+  font-style: normal;
+  color: #777;
+}
+
+.topper__autorization-link {
+  color: #59b7c2;
+}
+
+.topper__switches-lang,
+.topper__switches-currency {
+  height: 100%;
+  display: flex;
+}
+
+.topper__switches-lang {
+  margin: 0 2.4em 0 auto;
+}
+
+.topper input {
+  display: none;
+}
+
+.topper__switches-text {
+  font-size: 1.1rem; // 11px
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(230, 233, 237);
+  color: #444;
+  cursor: pointer;
+  transition: all 300ms ease-in;
+}
+
+.topper__switches-text:not(:last-child) {
+  margin-right: 1px;
+}
+
+.topper__switches-lang .topper__switches-text {
+  width: 3.2727em;
+}
+
+.topper__switches-currency .topper__switches-text {
+  width: 2.4545em;
+}
+
+.topper input:checked + .topper__switches-text,
+.topper__switches-text:hover {
+  background-color: rgba(89, 183, 194, 0.8);
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 983px) {
+  .topper-wrap {
+    justify-content: space-between;
+  }
+
+  .topper__contacts,
+  .topper__switches-lang {
+    margin: 0 0.5em 0 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .topper__autorization {
+    display: none;
+  }
+
+  .topper__switches-lang {
+    margin: 0 2.4em 0 auto;
+  }
+}

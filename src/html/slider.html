@@ -27,25 +27,79 @@
 
     <!-- SLIDER -->
     <div class="slider">
-      <img src="./images/img/item1.png" alt="product" class="slider__product" />
-      <ul class="slider__list">
-        <li class="slider__list-title">Breeze Noticeables</li>
-        <li class="slider__list-text">
-          The new series of natural air fresheners.
-        </li>
-        <li class="slider__list-text">Febreze Noticeables Meadows & Rain</li>
-        <li class="slider__list-text">Rain Air Freshener Refill.</li>
-      </ul>
-      <button class="slider__nav" type="button"></button>
-      <button class="slider__nav" type="button"></button>
-      <form action="" class="slider-indicators">
-        <input id="first" type="radio" name="indicator" checked />
-        <label for="first" class="slider-indicators__label"></label>
-        <input id="second" type="radio" name="indicator" />
-        <label for="second" class="slider-indicators__label"></label>
-        <input id="third" type="radio" name="indicator" />
-        <label for="third" class="slider-indicators__label"></label>
-      </form>
+      <div class="slider__line">
+        <!-- 1 -->
+        <div class="slider__line-wrapper slider__line-wrapper_first">
+          <img
+            src="./images/img/item1.png"
+            alt="product"
+            class="slider__line-wrapper-product"
+          />
+          <ul class="slider__line-wrapper-list">
+            <li class="slider__line-wrapper-list-title">Breeze Noticeables</li>
+            <li class="slider__line-wrapper-list-text">
+              The new series of natural air fresheners.
+            </li>
+            <li class="slider__line-wrapper-list-text">
+              Febreze Noticeables Meadows & Rain
+            </li>
+            <li class="slider__line-wrapper-list-text">
+              Rain Air Freshener Refill.
+            </li>
+          </ul>
+        </div>
+
+        <!-- 2 -->
+        <div class="slider__line-wrapper slider__line-wrapper_second">
+          <img
+            src="./images/img/item2.png"
+            alt="product"
+            class="slider__line-wrapper-product"
+          />
+          <ul class="slider__line-wrapper-list">
+            <li class="slider__line-wrapper-list-title">Beanpod Candles</li>
+            <li class="slider__line-wrapper-list-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </li>
+            <li class="slider__line-wrapper-list-text">
+              Lorem ipsum dolor sit amet consectetur.
+            </li>
+            <li class="slider__line-wrapper-list-text">
+              Lorem ipsum dolor sit amet.
+            </li>
+          </ul>
+        </div>
+
+        <!-- 3 -->
+        <div class="slider__line-wrapper slider__line-wrapper_third">
+          <img
+            src="./images/img/item3.png"
+            alt="product"
+            class="slider__line-wrapper-product"
+          />
+          <ul class="slider__line-wrapper-list">
+            <li class="slider__line-wrapper-list-title">Home Collection</li>
+            <li class="slider__line-wrapper-list-text">
+              Lorem ipsum dolor sit amet consectetur.
+            </li>
+            <li class="slider__line-wrapper-list-text">
+              Lorem ipsum dolor sit amet.
+            </li>
+            <li class="slider__line-wrapper-list-text">
+              Lorem ipsum dolor sit.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="slider__nav slider__nav_left" type="button"></button>
+      <button class="slider__nav slider__nav_right" type="button"></button>
+      <div class="slider__indicators">
+        <div
+          class="slider__indicators-icon slider__indicators-icon_active"
+        ></div>
+        <div class="slider__indicators-icon"></div>
+        <div class="slider__indicators-icon"></div>
+      </div>
     </div>
 
     <!-- BANNERS -->
