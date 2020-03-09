@@ -10,8 +10,8 @@ const emailInputLog = document.querySelector(
 const emailInputReg = document.querySelector(
   '.autorization-form_reg input[name=email]',
 );
-const passwordInput = document.querySelector(
-  '.autorization-form input[name=password]',
+const passwordInputReg = document.querySelector(
+  '.autorization-form_reg input[name=password]',
 );
 const repeatInput = document.querySelector(
   '.autorization-form input[name=repeat]',
@@ -65,7 +65,7 @@ const validationEmail = emailInput => {
 };
 
 const repeatPassword = () => {
-  if (passwordInput.value === repeatInput.value) return;
+  if (passwordInputReg.value === repeatInput.value) return;
   const repPas = 'Пароли должны совпадать';
   createErrorMessage(repeatInput, repPas);
 };
